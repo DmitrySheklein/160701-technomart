@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="action-menu">
+		<div class="container">
+			<h1>Техномарт</h1>
+			<form action="#" method="post" class="search" name="search">
+				<input type="text" placeholder="Поиск:">
+			</form>
+			<div class="user-panel bookmark"><p>Закладки:</p> <span class="number">0</span></div>
+			<div class="user-panel basket"><p>Корзина:</p> <span class="number">0</span></div>
+			<a href="#" class="order">Оформить заказ</a>
+		</div>
+	</div>
+	<header class="top-header">
+		<div class="container">
+			<div class="action-menu clearfix">
+				<h2>Интернет-магазин строительных материалов и инструментов для ремонта</h2>
+				<div class="contact">
+					<p class="contact-number">+7 (495) 555-05-55</p>
+					<p class="contact-adress">Москва, ул. Строителей, д.15</p>
+				</div>
+				<div class="account-menu">
+					<div class="account-menu-registr">
+						<a href="#" class="account-menu-enter">Войти</a>
+						<a href="#" class="account-menu-registration">Регистрация</a>
+					</div>
+				</div>
+			</div>
+			<nav class="main-menu">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Компания</a></li>
+					<li><a href="#">Каталог</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Спецпредложения</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="footer-top">
+		<div class="container clearfix">
+			<div class="contact">
+                    <h2 class="btn-technomart"><a href="./Техномарт_files/Техномарт.html">Техномарт</a></h2>
+                    <p>г. Москва, ул. Строителей, 15 +7 (495) 555-05-55</p>
+            </div>
+            <nav class="menu-footer">
+            	<ul class="menu-footer-top">
+	            	<li><a href="#">Компания</a>
+	            	<li><a href="#">Новости</a></li>
+	            	<li><a href="#">Каталог</a></li>
+	            	<li><a href="#">Доставка</a></li>
+	            	<li><a href="#">Контакты</a></li></li>
+            	</ul>
+            	<ul class="menu-footer-bottom">
+            		<li><a href="#">Материалы</a></li>
+            		<li><a href="#">Техника</a></li>
+            		<li><a href="#">Инструмент</a></li>
+            		<li><a href="#"></a></li>
+            		<li><a href="#">Спецпредложения</a></li>
+            	</ul>
+            </nav>
+		</div>
+	</div>
+	<div class="container">
+      <div class="content clearfix">
+          <form action="#" method="post" class="filter" name="sort" >
+            <div class="range-filter">
+              <div class="range-filter-name"> Цена:</div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="30000"></label>
+              </div>
+            </div>
+            <fieldset class="filter-features">
+              <legend>Производители:</legend>
+                <input type="checkbox" name="features-Bosch" id="catalog-item--Bosch" checked>
+                <label for="catalog-item--slider">Bosch</label>
+                <input type="checkbox" name="features-block" id="catalog-item--Interscol">
+                <label for="catalog-item--block">Интерскол</label>
+                <input type="checkbox" name="features-news" id="catalog-item--news" checked>
+                <label for="catalog-item--news">Makita</label>
+                <input type="checkbox" name="features-gallery" id="catalog-item--gallery">
+                <label for="catalog-item--gallery">DeWalt</label>
+                <input type="checkbox" name="features-cart" id="catalog-item--cart">
+                <label for="catalog-item--cart">Hitachi</label>
+            </fieldset>
+            <fieldset class="filter-grid">
+              <legend>Питание:</legend>
+              <input type="radio" id="adaptive" name="grid" value="Адаптивная" checked>
+              <label for="adaptive">Аккумуляторные</label>
+              <input type="radio" id="fixed" name="grid" value="Фиксированная">
+              <label for="fixed">Сетевые</label>
+            </fieldset>
+            <input class="btn" type="submit" value="Показать">
+          </form>
+          <div class="content-right">
+              <div class="sort">
+                <p class="sort-text">Сортировать:</p>
+                <div class="sort-type">
+                  <a href="#" class="sort-type-link">По цене</a>
+                  <a href="#" class="sort-type-link">По типу</a>
+                  <a href="#" class="sort-type-link">По функционалу</a>
+                </div>
+                <div class="sort-direction">
+                  <a href="#" class="sort-direction-link-up"><span class="icon-down-dir active"></span></a>
+                  <a href="#" class="sort-direction-link-down" ><span class="icon-up-dir"></span></a>
+                </div>
+              </div>
+              <div class="catalog">
+              <div class="catalog-item">
+                <div class="item-photo">
+                  <a href="#">
+                    <img src="../img/item-1.jpg" width="240" height="240" alt="Aviator">
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="item-name">Aviator</p>
+                  <p class="item-title">Одностраничный макет<br> с авторским дизайном</p>
+                  <div class="item-price-btn">
+                    <a class="btn btn-add-cart" href="#">8000 р.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <div class="item-photo">
+                  <a href="#">
+                    <img src="img/item-2.jpg" width="240" height="240" alt="Sunset">
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="item-name">Sunset</p>
+                  <p class="item-title">Интернет магазин<br> с личным кабинетом</p>
+                  <div class="item-price-btn">
+                    <a class="btn btn-add-cart" href="#">10000 р.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <div class="item-photo">
+                  <a href="#">
+                    <img src="img/item-3.jpg" width="240" height="240" alt="Forte">
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="item-name">Forte</p>
+                  <p class="item-title">Отличный макет<br> для личного блога</p>
+                  <div class="item-price-btn">
+                    <a class="btn btn-add-cart" href="#">5000 р.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <div class="item-photo">
+                  <a href="#">
+                    <img src="img/item-4.jpg" width="240" height="240" alt="Moder organic thai">
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="item-name">Moder organic thai</p>
+                  <p class="item-title">Сайт для ресторана быстрого питания</p>
+                  <div class="item-price-btn">
+                    <a class="btn btn-add-cart" href="#">12000 р.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <div class="item-photo">
+                  <a href="#">
+                    <img src="img/item-5.jpg" width="240" height="240" alt="Avenue">
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="item-name">Avenue</p>
+                  <p class="item-title">Макет для блога<br> о путешествиях</p>
+                  <div class="item-price-btn">
+                    <a class="btn btn-add-cart" href="#">8000 р.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-item">
+                <div class="item-photo">
+                  <a href="#">
+                    <img src="img/item-6.jpg" width="240" height="240" alt="Dovetail">
+                  </a>
+                </div>
+                <div class="item-info">
+                  <p class="item-name">Dovetail</p>
+                  <p class="item-title">Интернет магазин<br> с галереей товаров</p>
+                  <div class="item-price-btn">
+                    <a class="btn btn-add-cart" href="#">14000 р.</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="page-navigation">
+              <a class="page-btn active" href="#">1</a>
+              <a class="page-btn" href="#">2</a>
+              <a class="page-btn" href="#">3</a>
+              <a class="page-btn" href="#">Следующая</a>
+            </div>
+          </div>
+      </div>
+    </div>
+	<footer class="main-footer">
+		<div class="container clearfix">
+			<div class="footer-copyright">
+                    <p>2010-2013 Компания "Техномарт"</p>
+                    <p>Все права защищены</p>
+            </div>
+            <div class="footer-social-button">
+                    <a href="#" class="btn-social btn-social-vk">Вконтакте</a>
+                    <a href="#" class="btn-social btn-social-fb">Фейсбук</a>
+                    <a href="#" class="btn-social btn-social-inst">Инст</a>
+            </div>
+            <div class="footer-contact">
+                    <p>Обратная связь:</p>
+                    <p><a href="mailto:info@technomart.ru">info@technoportal.ru</a></p>
+                </div>
+            <div class="footer-design">
+                    <p>Дизайн сайта -</p>
+                    <p><a href="№">www.Glukhanko.ru</a></p>
+            </div>
+		</div>
+	</footer>
+</body>
+</html>
