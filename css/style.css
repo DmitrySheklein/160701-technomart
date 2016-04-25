@@ -1,4 +1,178 @@
+li {
+	list-style: none;
+}
 .container {
-	width: 900px;
+	width: 940px;
 	margin: 10px auto;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.main-title {
+	width: 220px;
+	float: left;
+}
+.search {
+	float: left;
+}
+.user-panel {
+	float: right;
+}
+.order {
+	width: 150px;
+	float: right;
+}
+.description {
+	widows: 175px;
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 0 66px 0 53px;
+	float: left;
+	font: italic normal 16px/1.44 "Cuprum", sans-serif;
+	color: #ee3643;
+}
+.contact {
+	widows: 220px;
+	float:left;
+}
+.account-menu {
+	float: right;
+}
+/* Навигация  */
+.main-menu ul {
+	display: table;
+	width: 100%;
+	background: #32425c;
+}
+.main-menu li {
+	display: table-cell;
+}
+.main-menu a {
+	display: block;
+	color: #fff;
+	text-align: center;
+}
+.service-name {
+	width: 275px;
+	height: 75px;
+	float:right;
+}
+.slider {
+	width: 620px;
+	height: 100%;
+	float:left;
+}
+.popular-title {
+	float: left;
+}
+.popular-top .btn {
+	float: right;
+}
+.sellers {
+	font-size: 0;
+}
+.sellers-item {
+	display: inline-block;
+	width: 218px;
+	font-size: 16px;
+}
+.manufactures {
+	font-size: 0;
+}
+.manufactures-logo {
+	display: inline-block;
+	width: 218px;
+}
+.service-control {
+	float: left;
+}
+.service-control label {
+    display: block;
+    width: 218px;
+}
+
+.service-info {
+	float:right;
+	width: 620px;
+}
+.left-column {
+	width: 540px;
+	float: left;
+}
+
+.right-column {
+	width: 300px;
+	float: right;
+}
+
+/*Футер топ*/
+.contact {
+	width: 320px;
+	float:left;
+}
+.menu-footer {
+	
+	float: right;
+}
+
+.menu-footer-top::after, .menu-footer-bottom::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+.menu-footer-top {
+	width: 550px;
+	text-align: justify;
+	padding-left: 0;
+}
+.menu-footer-top li,
+.menu-footer-top a,
+.menu-footer-bottom li,
+.menu-footer-bottom a {
+	display: inline-block;
+}
+.menu-footer-bottom {
+	width: 550px;
+	text-align: justify;
+	padding-left: 0;
+}
+/*Футер главный*/
+.footer-copyright {
+	width: 230px;
+	float: left;
+}
+.footer-social-button {
+	float: left;
+}
+.footer-contact {
+	float:right;
+}
+.footer-design {
+	float: right;
+}
+
+/*Каталог страница 2*/
+.filter {
+	width: 220px;
+	float: left;
+}
+.content-right {
+	width: 700px;
+	float: right;
+}
+/*Товары*/
+.catalog {
+	font-size: 0;
+	margin: 0 0 0 -20px;
+
+}
+.catalog-item {
+	display: inline-block;
+	width: 218px;
+	margin: 0 0 20px 20px;
+	border: 1px solid grey;
+	font: 600 16px/1.25 "Open Sans", sans-serif;
+    text-align: center;
 }
