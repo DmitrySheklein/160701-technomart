@@ -28,8 +28,8 @@
       <div class="action-contact-description clearfix">
         <h2 class="description">Интернет-магазин строительных материалов и инструментов для ремонта</h2>
         <div class="contact">
-          <p class="contact-number">+7 (495) 555-05-55</p>
-          <p class="contact-adress">Москва, ул. Строителей, д.15</p>
+          <p class="contact-number">+7 (812) 555-05-55</p>
+          <p class="contact-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="account-menu">
           <div class="account-menu-registr">
@@ -78,58 +78,57 @@
       </div>
       <div class="content clearfix">
           <form action="#" method="post" class="filter" name="sort" >
-            <div class="range-filter">
-              <div class="range-filter-name"> Цена:</div>
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
+            <div class="filter-title">Фильтр:</div>
+            <fieldset class="range-filter">
+              <input type="checkbox" class="input-click-checkbox" id="click-checkbox-price">
+              <label class="label-click-checkbox" for="click-checkbox-price">цена:</label>
+              <div class="checkbox-visible">
+                  <div class="range-controls">
+                      <div class="scale">
+                          <div style="width:152px;" class="bar"></div>
+                      </div>
+                      <div class="toggle min-toggle"></div>
+                      <div class="toggle max-toggle"></div>
+                  </div>
+                  <div class="price-controls">
+                      <input class="min-price" type="text" value="0">
+                      <input class="max-price" type="text" value="30 000">
+                  </div>
+              </div>
+            </fieldset>
+            <fieldset class="range-filter">
+                <input type="checkbox" class="input-click-checkbox" id="click-checkbox-manufacturers">
+                <label class="label-click-checkbox" for="click-checkbox-manufacturers">производители:</label>
+                <div class="checkbox-visible">
+                    <input type="checkbox" class="checkbox" value="bosh" name="bosh" id="bosh" checked="" checked=""><label for="bosh">bosh</label>
+                    <input type="checkbox" class="checkbox" value="интерскол" name="interskol" id="interskol"><label for="interskol">интерскол</label>
+                    <input type="checkbox" class="checkbox" value="makita" name="makita" id="makita" checked=""><label for="makita">makita</label>
+                    <input type="checkbox" class="checkbox" value="dewalt" name="dewalt" id="dewalt"><label for="dewalt">dewalt</label>
+                    <input type="checkbox" class="checkbox" value="hitachi" name="hitachi" id="hitachi" ><label for="hitachi">hitachi</label>
                 </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
-              </div>
-              <div class="price-controls">
-                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-                <label class="max-price">до <input name="max-price" type="text" value="30000"></label>
-              </div>
-            </div>
-            <fieldset class="filter-features">
-              <legend>Производители:</legend>
-                <input type="checkbox" name="features-Bosch" id="catalog-item--Bosch" checked>
-                <label for="catalog-item--slider">Bosch</label>
-                <input type="checkbox" name="features-block" id="catalog-item--Interscol">
-                <label for="catalog-item--block">Интерскол</label>
-                <input type="checkbox" name="features-news" id="catalog-item--news" checked>
-                <label for="catalog-item--news">Makita</label>
-                <input type="checkbox" name="features-gallery" id="catalog-item--gallery">
-                <label for="catalog-item--gallery">DeWalt</label>
-                <input type="checkbox" name="features-cart" id="catalog-item--cart">
-                <label for="catalog-item--cart">Hitachi</label>
             </fieldset>
-            <fieldset class="filter-grid">
-              <legend>Питание:</legend>
-              <input type="radio" id="adaptive" name="grid" value="Адаптивная" checked>
-              <label for="adaptive">Аккумуляторные</label>
-              <input type="radio" id="fixed" name="grid" value="Фиксированная">
-              <label for="fixed">Сетевые</label>
+            <fieldset>
+                <input type="checkbox" class="input-click-checkbox" id="click-checkbox-power">
+                <label class="label-click-checkbox" for="click-checkbox-power">питание:</label>
+                <div class="checkbox-visible">
+                    <input type="radio" class="radio" value="аккумуляторные" name="power" id="battery" checked=""><label for="battery">аккумуляторные</label>
+                    <input type="radio" class="radio" value="сетевые" name="power" id="electric"><label for="electric">сетевые</label>
+                </div>
             </fieldset>
-            <input class="btn" type="submit" value="Показать">
+            <input class="btn btn-filter" type="submit" value="Показать">
           </form>
           <div class="content-right">
-              <div class="sort">
-                <p class="sort-text">Сортировка:</p>
-                <div class="sort-type">
-                  <a href="#" class="sort-type-link">По цене</a>
-                  <a href="#" class="sort-type-link">По типу</a>
-                  <a href="#" class="sort-type-link">По функционалу</a>
-                </div>
-                <div class="sort-direction">
-                  <a href="#" class="sort-direction-link-up"><span class="icon-down-dir active"></span></a>
-                  <a href="#" class="sort-direction-link-down" ><span class="icon-up-dir"></span></a>
-                </div>
+              <div class="catalog-sellers-title">
+                Сортировка:
+                <a class="sort-down" href="#"></a>
+                <a class="sort-up sort-active" href="#"></a>
+                <a class="sort-type functional" href="#">по функционалу</a>
+                <a class="sort-type type" href="#">по типу</a>
+                <a class="sort-type price sort-type-action" href="#">по цене</a>
               </div>
               <div class="sellers">
                 <div class="sellers-item">
-                  <div class="item-actions">
+                  <div class="actions">
                     <a href="#" class="actions-buy">Купить</a>
                     <a href="#" class="actions-bookmark">В закладки</a>
                   </div>
@@ -141,11 +140,11 @@
                   <h4 class="item-title">
                     <a href="#">Перфоратор BOSH BFG 3000</a>
                   </h4>
-                  <p class="item-price price-old">22 500 р.</p>
-                  <p class="item-price price-new">15 500 р.</p>
+                  <p class="item-price item-price-old">22 500 р.</p>
+                  <p class="item-price item-price-new">15 500 р.</p>
                 </div>
                 <div class="sellers-item">
-                  <div class="item-actions">
+                  <div class="actions">
                     <a href="#" class="actions-buy">Купить</a>
                     <a href="#" class="actions-bookmark">В закладки</a>
                   </div>
@@ -157,11 +156,11 @@
                   <h4 class="item-title">
                     <a href="#">Перфоратор BOSH BFG 6000</a>
                   </h4>
-                  <p class="item-price price-old">30 500 р.</p>
-                  <p class="item-price price-new">25 500 р.</p>
+                  <p class="item-price item-price-old">30 500 р.</p>
+                  <p class="item-price item-price-new">25 500 р.</p>
                 </div> 
-                <div class="sellers-item">
-                  <div class="item-actions">
+                <div class="sellers-item new">
+                  <div class="actions">
                     <a href="#" class="actions-buy">Купить</a>
                     <a href="#" class="actions-bookmark">В закладки</a>
                   </div>
@@ -173,11 +172,11 @@
                   <h4 class="item-title">
                     <a href="#">Перфоратор BOSH BFG 2000</a>
                   </h4>
-                  <p class="item-price price-old"></p>
-                  <p class="item-price price-new">12 500 р.</p>
+                  <p class="item-price item-price-old"></p>
+                  <p class="item-price item-price-new">12 500 р.</p>
                 </div>
                 <div class="sellers-item">
-                  <div class="item-actions">
+                  <div class="actions">
                     <a href="#" class="actions-buy">Купить</a>
                     <a href="#" class="actions-bookmark">В закладки</a>
                   </div>
@@ -189,11 +188,11 @@
                   <h4 class="item-title">
                     <a href="#">Перфоратор BOSH BFG 3000</a>
                   </h4>
-                  <p class="item-price price-old">22 500 р.</p>
-                  <p class="item-price price-new">15 500 р.</p>
+                  <p class="item-price item-price-old">22 500 р.</p>
+                  <p class="item-price item-price-new">15 500 р.</p>
                 </div>
-                <div class="sellers-item">
-                  <div class="item-actions">
+                <div class="sellers-item new">
+                  <div class="actions">
                     <a href="#" class="actions-buy">Купить</a>
                     <a href="#" class="actions-bookmark">В закладки</a>
                   </div>
@@ -205,11 +204,11 @@
                   <h4 class="item-title">
                     <a href="#">Перфоратор BOSH BFG 6000</a>
                   </h4>
-                  <p class="item-price price-old">30 500 р.</p>
-                  <p class="item-price price-new">25 500 р.</p>
+                  <p class="item-price item-price-old">30 500 р.</p>
+                  <p class="item-price item-price-new">25 500 р.</p>
                 </div> 
                 <div class="sellers-item">
-                  <div class="item-actions">
+                  <div class="actions">
                     <a href="#" class="actions-buy">Купить</a>
                     <a href="#" class="actions-bookmark">В закладки</a>
                   </div>
@@ -221,11 +220,11 @@
                   <h4 class="item-title">
                     <a href="#">Перфоратор BOSH BFG 2000</a>
                   </h4>
-                  <p class="item-price price-old"></p>
-                  <p class="item-price price-new">12 500 р.</p>
+                  <p class="item-price item-price-old"></p>
+                  <p class="item-price item-price-new">12 500 р.</p>
                 </div>
-                <div class="sellers-item">
-                  <div class="item-actions">
+                <div class="sellers-item new">
+                  <div class="actions">
                     <a href="#" class="actions-buy">Купить</a>
                     <a href="#" class="actions-bookmark">В закладки</a>
                   </div>
@@ -237,11 +236,11 @@
                   <h4 class="item-title">
                     <a href="#">Перфоратор BOSH BFG 3000</a>
                   </h4>
-                  <p class="item-price price-old">22 500 р.</p>
-                  <p class="item-price price-new">15 500 р.</p>
+                  <p class="item-price item-price-old">22 500 р.</p>
+                  <p class="item-price item-price-new">15 500 р.</p>
                 </div>
                 <div class="sellers-item">
-                  <div class="item-actions">
+                  <div class="actions">
                     <a href="#" class="actions-buy">Купить</a>
                     <a href="#" class="actions-bookmark">В закладки</a>
                   </div>
@@ -253,11 +252,11 @@
                   <h4 class="item-title">
                     <a href="#">Перфоратор BOSH BFG 6000</a>
                   </h4>
-                  <p class="item-price price-old">30 500 р.</p>
-                  <p class="item-price price-new">25 500 р.</p>
+                  <p class="item-price item-price-old">30 500 р.</p>
+                  <p class="item-price item-price-new">25 500 р.</p>
                 </div> 
                 <div class="sellers-item">
-                  <div class="item-actions">
+                  <div class="actions">
                     <a href="#" class="actions-buy">Купить</a>
                     <a href="#" class="actions-bookmark">В закладки</a>
                   </div>
@@ -269,15 +268,16 @@
                   <h4 class="item-title">
                     <a href="#">Перфоратор BOSH BFG 2000</a>
                   </h4>
-                  <p class="item-price price-old"></p>
-                  <p class="item-price price-new">12 500 р.</p>
+                  <p class="item-price item-price-old"></p>
+                  <p class="item-price item-price-new">12 500 р.</p>
                 </div>               
               </div>
-            <div class="page-navigation">
-              <a class="page-btn active" href="#">1</a>
-              <a class="page-btn" href="#">2</a>
-              <a class="page-btn" href="#">3</a>
-              <a class="page-btn" href="#">Следующая</a>
+            <div class="paginator">
+              <a class="paginator-prev" href="#prev">Предыдущая</a>
+              <a class=" current" href="#">1</a>
+              <a  href="#">2</a>
+              <a  href="#">3</a>
+              <a class="paginator-next" href="#next">Следующая</a>
             </div>
           </div>
       </div>
@@ -293,7 +293,9 @@
     <div class="container clearfix">
       <div class="contact">
                     <h2 class="main-title"><a href="#">Техномарт</a></h2>
-                    <p>г. Москва, ул. Строителей, 15 +7 (495) 555-05-55</p>
+                    <p  class="contact-text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+                    +7 (812) 555-05-55
+                    </p>
             </div>
             <nav class="menu-footer">
               <ul class="menu-footer-top">
@@ -316,7 +318,7 @@
   <footer class="main-footer">
     <div class="container clearfix">
       <div class="footer-copyright">
-                    <p>2010-2013 Компания "Техномарт"</p>
+                    <p>2010-2016 Компания <span class="quotes">Техномарт</span></p>
                     <p>Все права защищены</p>
             </div>
             <div class="footer-social-button">
