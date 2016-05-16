@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Texномарт мой</title>
+	<title>Texномарт главная</title>
 	<link href='https://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
@@ -135,7 +135,7 @@
 					<div class="sellers-item">
 						<div class="actions">
 							<a class="actions-buy" href="#">Купить</a>
-							<a class="actions-bookmark"href="#">В закладки</a>
+							<a class="actions-bookmark" href="#">В закладки</a>
 						</div>
 						<div class="item-photo"><img src="img/popular-item-bfg-9000.png" alt="BOSH BFG 9000" width="184" height="164" ></div>
 						<h4 class="item-title"><a href="#">Перфоратор BOSH BFG 9000</a></h4>
@@ -247,6 +247,25 @@
 						<img src="img/service-map-icon.png" alt="Карта проезда в офис">
 					</div>
 					<a href="#" class="btn write-us">Заблудились? Напишите нам!</a>
+					<form class="write-us-form clearfix" action="#" method="post">
+	                    <a href="#" class="write-us-close">Закрыть</a>
+	                    <fieldset class="name">
+	                        <label for="name">Ваше имя:</label>
+	                        <input id="name" name="name" type="text" placeholder="Представьтесь, пожалуйста" required="">
+	                    </fieldset>
+	                    <fieldset class="email">
+	                        <label for="email">Ваш e-mail:</label>
+	                        <input id="email" name="email" type="email" placeholder="Для отправки ответа" required="">
+	                    </fieldset>
+	                    <fieldset class="free-text">
+	                        <label for="free-text">Текст письма:</label>
+	                        <textarea id="free-text" name="free-text" placeholder="В свободной форме" required=""></textarea>
+	                    </fieldset>
+	                    <fieldset class="input-buttons  clearfix">
+	                        <input type="submit" value="Отправить">
+	                        <input type="reset" value="Отмена">
+	                    </fieldset>
+                    </form>  
 				</div>
 			</div>			
 		</div>
@@ -268,7 +287,7 @@
 	            	<li><a href="#">Новости</a></li>
 	            	<li><a href="#">Каталог</a></li>
 	            	<li><a href="#">Доставка</a></li>
-	            	<li><a href="#">Контакты</a></li></li>
+	            	<li><a href="#">Контакты</a></li>
             	</ul>
             	<ul class="menu-footer-bottom">
             		<li><a href="#">Материалы</a></li>
